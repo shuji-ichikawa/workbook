@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+}
+
+th {
+    background-color:  #c0c0c0; /* 背景色指定 */
+    color:  #000000;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+}
+
+td {
+    background-color:  #ffffff; /* 背景色指定 */
+    text-align:  center;
+}
+
+body {
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(180deg, #ffffff 70%, #ffffff);
+  font-family: 'DotGothic16', cursive;
+  font-size: 1em;
+  color: #336688;
+  background-image: url("bg3.png");
+}
+
+div.dodai{
+	margin:70px 160px;
+	padding:30px 70px;
+	width: 1000px;
+	background-color: #ffffff;
+}
+
+button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  margin        : 10px 10px;
+  background    : #1a1aff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #1a1aff;    /* 枠の指定 */
+}
+button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #1a1aff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+a.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  margin        : 10px 10px;
+  background    : #1a1aff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #1a1aff;    /* 枠の指定 */
+}
+
+a.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #1a1aff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+h1 {
+  color: #336688;
+  padding:0px 12px;
+  margin:0px 10px;
+  width: 90%;
+}
+
+h2 {
+	padding:12px 12px;
+	margin:10px 10px;
+	font-size:15pt;
+	clear: both;
+	color: #ffffff;
+	background: #88AACC;
+	opacity:0.9;
+	border-radius: 10px;
+	text-align: center;
+	width:50px;
+}
