@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
 <%int totalscore = (int)session.getAttribute("totalscore");
+int total = (int)session.getAttribute("total");
 String title = (String)session.getAttribute("title");
 int No = (int)session.getAttribute("No");%>
 <!DOCTYPE html>
@@ -9,10 +10,12 @@ int No = (int)session.getAttribute("No");%>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/workbook/css/style2.css">
-<title>Insert title here</title>
+<title>採点</title>
 </head>
 <body>
 <div class="dodai">
+<h1>テスト結果</h1>
+<br>
 <table border="1">
 <tr>
 <th></th>
@@ -78,7 +81,7 @@ int No = (int)session.getAttribute("No");%>
 </tr>
 <tr>
 <td height="20" width="50">合計点数</td>
-<td height="20" width="50"><%=totalscore %></td>
+<td height="20" width="50" colspan="2"><%=totalscore %>/<%=total %></td>
 </tr>
 </table>
 <a href="/workbook/jsp/toppage.jsp" class="button">終了</a>

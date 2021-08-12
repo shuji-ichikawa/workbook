@@ -43,6 +43,7 @@ public class workbook_result_Controller extends HttpServlet {
 			session.setAttribute("answerlist", answerlist);
 
 			String judg;
+			int total = 0;
 			ArrayList<String> judglist = new ArrayList<String>();
 			int totalscore = 0;
 			for(int i = 0; i <= 49; i++) {
@@ -58,8 +59,11 @@ public class workbook_result_Controller extends HttpServlet {
 					judglist.add(judg);
 				}
 				session.setAttribute("judglist", judglist);
+				total += newworkbooklist.get(i).getScore();
 			}
 			session.setAttribute("totalscore", totalscore);
+			session.setAttribute("total", total);
+
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}

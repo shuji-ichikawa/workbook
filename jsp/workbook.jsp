@@ -19,7 +19,7 @@ String problem = (String)session.getAttribute("problem");
 <br>
 <h2>問<%=No %><input type="hidden" name="No" value="<%=No %>" /></h2>
 <c:forEach var="problemlistitem" items="${ problemlist}" begin="<%=No-1 %>" end="<%=No-1 %>" step="1">
-	<p><input type="hidden" name="shohin_mei" value="${ problemlistitem.problem }" />
+	<p style="white-space: pre-line;"><input type="hidden" name="shohin_mei" value="${ problemlistitem.problem }" />
 		<c:out value="${ problemlistitem.problem }" /></p>
 </c:forEach>
 <p><input type="radio" name="answer" value="A">A

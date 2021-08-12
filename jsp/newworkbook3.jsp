@@ -11,10 +11,17 @@
 <body>
 <%int No = (int)session.getAttribute("No");%>
 <div class="dodai">
+<c:choose>
+	<c:when test="${No > 50}"><p>・問題作成を完了する場合は［完了］、中止する場合は［中止］をクリックしてください。</p></c:when>
+	<c:otherwise><p>・問題作成を完了する場合は［完了］、中止する場合は［中止］、継続する場合は［継続］をクリックしてください。</p></c:otherwise>
+</c:choose>
 <p>・問題作成を完了する場合は［完了］、中止する場合は［中止］、継続する場合は［継続］をクリックしてください。</p>
 <p>・［完了］をクリックすると作成中の問題を保存してトップページへ戻ります。</p>
 <p>・［中止］をクリックすると作成中の問題を保存せずにトップページへ戻ります。</p>
-<p>・［継続］をクリックすると新規問題集作成ページへ戻り、引き続き問題を作成できます。</p>
+<c:choose>
+	<c:when test="${No > 50}"></c:when>
+	<c:otherwise><p>・［継続］をクリックすると新規問題集作成ページへ戻り、引き続き問題を作成できます。</p></c:otherwise>
+</c:choose>
 <a href="/workbook/newworkbook_Controller?pattern=1" class="button">完了</a>
 <a href="/workbook/newworkbook_Controller?pattern=2" class="button">中止</a>
 <c:choose>
